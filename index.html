@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emidio | Estudante de Sistemas de Informação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%);
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .project-card:hover {
+            transform: scale(1.03);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-600">Emidio</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 px-3 py-2">Início</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2">Sobre</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 px-3 py-2">Habilidades</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600 px-3 py-2">Projetos</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2">Contato</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white pt-32 pb-20" id="vanta-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Olá, eu sou Emidio</h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">Estudante de Sistemas de Informação</h2>
+                    <p class="text-lg mb-8 max-w-lg">Entusiasta de programação, desenvolvimento de software e jogos.</p>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">Ver Projetos</a>
+                        <a href="#contact" class="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition duration-300">Contato</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center" data-aos="fade-left">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 bg-blue-400 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                            <img src="Minha foto.jpg" alt="Minha foto">" alt="Emidio" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-5 -right-5 bg-white rounded-full p-3 shadow-lg">
+                            <i data-feather="code" class="text-blue-600 w-8 h-8"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Sobre Mim</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="C.jpg" alt="Estudante de TI" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Experiência Profissional</h3>
+                    <p class="text-gray-600 mb-6">Associação dos Servidores Públicos do Paraná - ASPP Sede</p>
+                    <p class="text-gray-600 mb-6">De Março 2023 a Novembro 2024</p>
+                    <p class="text-gray-600 mb-6">Suporte Técnico e Atendimento a Usuários; Gestão e Manutenção de Infraestrutura de TI; Monitoramento de Segurança e Backup de Dados; Documentação e Relatórios Técnicos</p>                    
+                    
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 mt-8">Estudante de Bacharelado em Sistemas de Informação</h3>
+                    <p class="text-gray-600 mb-6">Pontifícia Universidade Católica do Paraná - 2° Período</p>
+                    <p class="text-gray-600 mb-6">Com foco em desenvolvimento de software, banco de dados e arquitetura de sistemas. Busco constantemente aprender novas tecnologias e aplicar meus conhecimentos em projetos práticos.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i data-feather="book" class="text-blue-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-medium text-gray-800">Formação Acadêmica</h4>
+                                <p class="text-gray-600">Bacharelado em Sistemas de Informação</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i data-feather="target" class="text-blue-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-medium text-gray-800">Objetivos</h4>
+                                <p class="text-gray-600">Me tornar um desenvolvedor back-end qualificado.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i data-feather="award" class="text-blue-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-medium text-gray-800">Interesses</h4>
+                                <p class="text-gray-600">Desenvolvimento web, inteligência artificial, ciência de dados, segurança da informação, desenvolvimento back-end para jogos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Minhas Habilidades</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Skill 1 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="code" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Desenvolvimento Web</h3>
+                    <p class="text-gray-600 text-sm">HTML, CSS, JavaScript e frameworks modernos</p>
+                </div>
+                
+                <!-- Skill 2 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="database" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Banco de Dados</h3>
+                    <p class="text-gray-600 text-sm">SQL, modelagem e administração de bancos relacionais</p>
+                </div>
+                
+                <!-- Skill 3 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="smartphone" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Mobile</h3>
+                    <p class="text-gray-600 text-sm">Desenvolvimento de aplicativos móveis</p>
+                </div>
+                
+                <!-- Skill 4 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="git-merge" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Controle de Versão</h3>
+                    <p class="text-gray-600 text-sm">Git e GitHub para versionamento de código</p>
+                </div>
+                
+                <!-- Skill 5 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="cpu" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Programação</h3>
+                    <p class="text-gray-600 text-sm">Lógica e estruturas de programação</p>
+                </div>
+                
+                <!-- Skill 6 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="layers" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Arquitetura</h3>
+                    <p class="text-gray-600 text-sm">Padrões de projeto e arquitetura de software</p>
+                </div>
+                
+                <!-- Skill 7 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" data-aos="fade-up" data-aos-delay="700">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="bar-chart-2" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Análise de Dados</h3>
+                    <p class="text-gray-600 text-sm">Visualização e interpretação de dados</p>
+                </div>
+                
+                <!-- Skill 8 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" data-aos="fade-up" data-aos-delay="800">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="users" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Trabalho em Equipe</h3>
+                    <p class="text-gray-600 text-sm">Colaboração em projetos acadêmicos</p>
+                </div>
+
+                <!-- Skill 9 -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" data-aos="fade-up" data-aos-delay="900">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="package" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Desenvolvimento de Jogos</h3>
+                    <p class="text-gray-600 text-sm">Unity e C# para criação de jogos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Meus Projetos</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Alguns dos projetos que desenvolvi durante minha jornada acadêmica.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="bets.jpg" alt="Projeto 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-purple-100 text-purple-600 text-xs font-semibold px-3 py-1 rounded-full">Web</span>
+                            <span class="ml-2 text-gray-500 text-sm">JavaScript</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Central de Gerenciamento de Apostas Esportivas</h3>
+                        <p class="text-gray-600 mb-4">Plataforma web para análise e gerenciamento de apostas esportivas, com objetivo de maximizar ganhos para seus usuários.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <i data-feather="github" class="w-4 h-4 mr-1"></i>
+                                <span class="text-sm">Código</span>
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <i data-feather="external-link" class="w-4 h-4 mr-1"></i>
+                                <span class="text-sm">Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="MySql.jpg" alt="Projeto 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-purple-100 text-purple-600 text-xs font-semibold px-3 py-1 rounded-full">Banco de Dados</span>
+                            <span class="ml-2 text-gray-500 text-sm">SQL</span>
+                            <span class="ml-2 text-gray-500 text-sm">brModelo</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Modelagem de Dados para Gerenciamento de Aluguel de Carros</h3>
+                        <p class="text-gray-600 mb-4">Sistema de gerenciamento de biblioteca com modelagem relacional e conceitual.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <i data-feather="github" class="w-4 h-4 mr-1"></i>
+                                <span class="text-sm">Código</span>
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <i data-feather="external-link" class="w-4 h-4 mr-1"></i>
+                                <span class="text-sm">Documentação</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-blue-100 text-blue-600 text-xs font-semibold px-3 py-1 rounded-full">...</span>
+                            <span class="ml-2 text-gray-500 text-sm">...</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Em breve...</h3>
+                        <p class="text-gray-600 mb-4">Em andamento...</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <i data-feather="github" class="w-4 h-4 mr-1"></i>
+                                <span class="text-sm">Código</span>
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <i data-feather="external-link" class="w-4 h-4 mr-1"></i>
+                                <span class="text-sm">Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                    Ver todos os projetos
+                    <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Estou aberto a oportunidades de estágio, colaborações em projetos ou simplesmente para conversar sobre tecnologia.</p>
+            </div>
+            <div class="md:flex">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-6">Envie uma mensagem</h3>
+                        <form action="mailto:angelottiemidio@gmail.com" method="post" enctype="text/plain">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">Nome</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i data-feather="mail" class="text-blue-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-medium text-gray-800">Email</h4>
+                                <p class="text-gray-600">angelottiemidio@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i data-feather="linkedin" class="text-blue-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-medium text-gray-800">LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/emidioaf" class="text-blue-600 hover:underline">linkedin.com/in/emidioaf</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i data-feather="github" class="text-blue-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-medium text-gray-800">GitHub</h4>
+                                <a href="https://github.com/EmidioAF" class="text-blue-600 hover:underline">github.com/EmidioAF</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i data-feather="map-pin" class="text-blue-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-medium text-gray-800">Localização</h4>
+                                <p class="text-gray-600">Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <h4 class="font-medium text-gray-800 mb-4">Redes Sociais</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://x.com/KIR_IN21" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-100 transition duration-300">
+                                <i data-feather="twitter" class="text-blue-400"></i>
+                            </a>
+                            <a href="https://www.instagram.com/emidio.angelotti" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-100 transition duration-300">
+                                <i data-feather="instagram" class="text-pink-500"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Vanta.js
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b82f6,
+            backgroundColor: 0x1e3a8a,
+            size: 1.00
+        });
+
+        // Initialize AOS and Feather Icons
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            feather.replace();
+        });
+    </script>
+</body>
+</html>
